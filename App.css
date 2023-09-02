@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Tektur:wght@600&display=swap&family=Audiowide&family=Ubuntu:wght@400');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav{
+   position: fixed;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image:linear-gradient(to left, rgb(255, 4, 4,9)30%, rgb(255, 255, 255,9));
+    height: 70px;
+    top:0;
+}
+.leftnav{
+     background:linear-gradient(to top,rgb(60, 29, 29), rgb(246, 5, 5));
+     background-clip: text;
+     color: transparent;
+     font-weight: 900;
+     font-size: 30px;
+     font-family: 'Audiowide',sans-serif;
+     width: 30%;
+}
+.rightnav{
+     width: 50%; 
+}
+.rightnav a{
+     padding: 30px;
+     cursor: pointer;
+     text-decoration: none;
+     color: white;
+     font-size: 20px;
+     font-weight: 900;
+     font-family: 'Michroma';
+}
+.rightnav a:hover{
+    color:rgb(2, 5, 52) ;
+    transition: 0.3s;
+}
+.icons{
+  width: 100%;
+  position: fixed;
+  top: 70px;
+   border-bottom: 2px solid white;
+}
+.fa{
+   
+    padding: 15px 20px;
+    border-right: 1px solid white;
+    color: black;
+}
+.fa:hover{
+    color: white;
+    cursor: pointer;
+    box-shadow: inset  -0px -0.8px 1px 3px ;
+}
+.search{
+    float: right;
+    padding:10px 60px;
+}
+.Search{
+    padding: 0px 10px;
+    background-color: transparent;
+    border: 2px solid rgb(255, 5, 243);
+    border-top-left-radius: 5px;
+    font-size: 15px;
+    width: 200px;
+    height: 30px;
+    color: black;
+}
+.Search::placeholder{
+    color: rgb(255, 5, 243);
+}
+.btn{
+    padding: 0px 8px;
+    background: rgba(255, 5, 243, 0.6);
+    border-bottom-right-radius: 5px;
+    font-size: 18px;
+    border: 2px solid rgba(255, 5, 243, 0.6) ;
+    height: 30px;
+    width: 100px;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+}
+.btn:hover{
+  background: transparent;
+  border: 2px solid rgb(255, 5, 243);
+  text-shadow: 0 0 10px,
+  0 0 20px,
+  0 0 40px,
+  0 0 70px,
+  0 0 90px,
+  0 0 100px;
+}
+.section{
+  
+  top:150px;
+    background-image:url(https://www.pixelstalk.net/wp-content/uploads/2016/07/3D-HD-Nature-Wallpapers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1200px;
+}
+.main{
+    padding:  130px 0px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: 'Audiowide',sans-serif;
+}
+#h1{
+    padding: 20px;
+    color: transparent;
+    background:linear-gradient(to top,rgb(60, 29, 29), rgb(246, 5, 5));
+    background-clip: text;
+    height: 80px;
+}
+.ad{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.elaborate{
+    color:rgb(3, 4, 45);
+    font-size: 20px;
+    width: 30%;
+    font-weight: 500;
+    top: 0;
+    height: 450px;
+}
+.elaborate h1{
+    font-size: 50px;
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: 700;
+    color: rgb(5, 18, 42);
+}
+#info{
+    color: rgb(222,206,206);
+    margin: 20px;
+    float: right;
+    padding: 8px 14px;
+    background: transparent;
+    border-radius: 30px;
+    border: 3px solid rgb(222, 206, 206);
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 17px;
+    font-family: "Tektur",sans-serif;
+}
+#info::before{
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background:  rgb(3, 115, 3) ;
+    transition: 0.3s;
+}
+#info:hover::before{
+    width: 100%;
+}
+#info:hover{
+    color: rgb(252, 252, 252);
+}
+.register{
+    width: 460px;
+    box-shadow:  0px -1px 4px 2px;
+    height: 500px;
+    margin: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
+.register h1{
+    font-size: 40px;
+    margin: 20px;
+    font-family: 'Audiowide';
+}
+#text{
+    background: transparent;
+    color: black;
+    padding: 14px 10px;
+    width: 280px;
+    margin: 10px;
+    box-shadow: inset -2px -3px 0px;
+}
+#text::placeholder{
+    color: BLACK;
+    font-size: 18px;
+}
+#btn2{
+    color: black;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 17px 27px;
+    border: 3px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    background: transparent;
+    font-size: 25px;
+    margin: 25px;
+    z-index: 1;
+}
+#btn2::before{
+    right: 0;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    background: rgb(3, 115, 3);
+    transition: 0.3s;
+}
+#btn2:hover::before{
+    width: 100%;
+}
